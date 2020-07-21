@@ -10,4 +10,10 @@
     <bean id="musicBean"
           class="ru.alishev.springcourse.RockMusic">
     </bean>
+    <bean id = "musicPlayer"
+        class = "ru.alishev.springcourse.MusicPlayer">
+        <property name="music" ref="musicBean"/>
+        <property name="name" value="Some name"/>
+        <property name="volume" value="50"/>
+    </bean>
 </beans>
