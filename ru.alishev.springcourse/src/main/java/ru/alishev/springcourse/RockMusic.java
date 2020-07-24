@@ -2,14 +2,26 @@ package ru.alishev.springcourse;
 
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
 /**
  * @author Adm on 20.07.2020
  * @project ru.alishev.springcourse
  **/
 @Component
 public class RockMusic implements Music{
+
+
     @Override
     public String getSong() {
-        return "Wind cries Mary";
+        List<String> list = new ArrayList<>();
+        list.add("Wind cries Mary");
+        list.add("Personal Jesus");
+        list.add("Rock DJ");
+        Random random = new Random();
+        int rand = random.nextInt(3);
+        return list.get(rand);
     }
 }
