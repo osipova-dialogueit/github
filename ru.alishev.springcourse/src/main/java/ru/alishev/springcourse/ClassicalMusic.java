@@ -10,7 +10,6 @@ import java.util.Random;
  * @author Adm on 20.07.2020
  * @project ru.alishev.springcourse
  **/
-@Component
 public class ClassicalMusic implements Music{
     private List list;
 

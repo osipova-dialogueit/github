@@ -6,13 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-/**
- * @author Adm on 20.07.2020
- * @project ru.alishev.springcourse
- **/
-@Component
-public class RockMusic implements Music{
 
+public class RockMusic implements Music{
 
     @Override
     public String getSong() {

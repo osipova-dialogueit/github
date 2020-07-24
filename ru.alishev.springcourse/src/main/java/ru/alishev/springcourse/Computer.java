@@ -3,15 +3,14 @@ package ru.alishev.springcourse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-/**
- * @author Adm on 24.07.2020
- * @project ru.alishev.springcourse
- **/
-@Component
 public class Computer {
     private int id;
-    @Autowired
     private MusicPlayer musicPlayer;
+
+    public Computer(MusicPlayer musicPlayer) {
+        this.id = 1;
+        this.musicPlayer = musicPlayer;
+    }
 
     @Override
     public String toString() {
