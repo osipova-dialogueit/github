@@ -5,5 +5,5 @@ package ru.alishev.springcourse;
  * @project ru.alishev.springcourse
  **/
 public enum Genre {
-    CLASSIC, ROCK
+    CLASSIC, ROCK, RAP
 }
